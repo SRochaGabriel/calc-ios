@@ -1,0 +1,122 @@
+/* Importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Silkscreen:wght@400;700&display=swap');
+
+/* Configurações gerais para a página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Questrial", sans-serif;
+    font-weight: 600;
+}
+
+/* Definições para o body, que agirá como o fundo da página */
+body {
+    background: linear-gradient(#003347, #008bd1);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Definições para a div que define a calculadora */
+.calculadora {
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+    width: 320px;
+    /* Definindo a calculadora como um flexbox em direção vertical */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Definições para o input que serve de tela da calculadora */
+#tela {
+    width: 100%;
+    height: 60px;
+    font-size: 1.5em;
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+    background: #b1d6ac;
+    text-align: right;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .5);
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    outline: none;
+}
+
+/* Definições para a div que contém cada linha de botão */
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Definições para cada linha de botões da calculadora */
+.linha_botoes {
+    display: flex;
+    gap: 15px;
+}
+
+/* Definições gerais para elementos button */
+button {
+    flex: 1;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background: #8b9ea5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Comportamento do mouse ao passar o mouse */
+button:hover {
+    background-color: #3c4a4e;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Comportamento do botão ao ser clicado */
+button:active {
+    transform: scale(0.97);
+}
+
+/* Definições para os botões de operações da calculadora */
+.operador {
+    background-color: #4c82c0;
+}
+
+/* Comportamento dos botões de classe OPERADOR ao passar o mouse */
+.operador:hover {
+    background-color: #2b4b75;
+}
+
+/* Definições para o botão = */
+.botao_igual_a {
+    background-color: #4cc069;
+}
+
+/* Comportamento do botão = ao passar do mouse */
+.botao_igual_a:hover {
+    background-color: #136b29;
+}
+
+/* Definições para o botão limpar */
+.botao_limpar {
+    background-color: #c04c4c;
+}
+
+/* Comportamento do botão LIMPAR ao passar do mouse */
+.botao_limpar:hover {
+    background-color: #911f1f;
+}
+
+/* Comportamento de crescimento do botão 0 */
+.botao_zero {
+    flex: 2;
+}
