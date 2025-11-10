@@ -37,7 +37,6 @@ function calcularResultado() {
 document.addEventListener('keydown', function(evento) {
     // Definindo a variável que armazena o valor da tecla digitada por meio de 'evento.key'. Por exemplo: "1", "+", "Enter", "Backspace"
     const tecla = evento.key;
-    console.log(tecla)
 
     // Aqui, verificamos se o valor da variável 'tecla' está incluido na string que define os possíveis válidos por meio da função 'includes'
     // SOBRE INCLUDES: https://www.w3schools.com/jsref/jsref_includes.asp
