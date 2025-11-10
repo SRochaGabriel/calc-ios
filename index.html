@@ -16,42 +16,43 @@
         <div class="botoes">
             <!-- Seção que contém cada linha de botões da calculadora -->
             <div class="linha_botoes"> <!-- Primeira linha -->
-                <button class="botao_limpar">C</button>
-                <button class="operador">/</button>
-                <button class="operador">*</button>
-                <button>
+                <button onclick="limparTela()" class="botao_limpar">C</button>
+                <button onclick="adicionarValor('/')" class="operador">/</button>
+                <button onclick="adicionarValor('*')" class="operador">*</button>
+                <button onclick="apagarUltimo()">
                     <i class="fa-solid fa-delete-left"></i>
                 </button>
             </div>
 
             <div class="linha_botoes"> <!-- Segunda linha -->
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="operador">-</button>
+                <button onclick="adicionarValor('7')">7</button>
+                <button onclick="adicionarValor('8')">8</button>
+                <button onclick="adicionarValor('9')">9</button>
+                <button onclick="adicionarValor('-')" class="operador">-</button>
             </div>
 
             <div class="linha_botoes"> <!-- Terceira linha -->
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="operador">+</button>
+                <button onclick="adicionarValor('4')">4</button>
+                <button onclick="adicionarValor('5')">5</button>
+                <button onclick="adicionarValor('6')">6</button>
+                <button onclick="adicionarValor('+')" class="operador">+</button>
             </div>
 
             <div class="linha_botoes"> <!-- Quarta linha -->
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="botao_igual_a">=</button>
+                <button onclick="adicionarValor('1')">1</button>
+                <button onclick="adicionarValor('2')">2</button>
+                <button onclick="adicionarValor('3')">3</button>
+                <button onclick="calcularResultado()" class="botao_igual_a">=</button>
             </div>
 
             <div class="linha_botoes"> <!-- Quinta linha -->
-                <button class="botao_zero">0</button>
-                <button>.</button>
+                <button onclick="adicionarValor('0')" class="botao_zero">0</button>
+                <button onclick="adicionarValor('.')">.</button>
             </div>
         </div>
     </div>
 
     <script src="https://kit.fontawesome.com/44923565ae.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 </html>
